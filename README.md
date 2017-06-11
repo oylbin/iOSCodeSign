@@ -1,5 +1,7 @@
 # iOSCodeSign
 
+[关于iOS应用签名](https://github.com/oylbin/iOSCodeSign/wiki/about-ios-codesigning)
+
 ## setup
 
 clone this repo and cd to repo directory
