@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ioscodesign',
-    version='1.0.0',
+    version='1.0.3',
     description='codesign tool for iOS package',
     url='https://github.com/oylbin/iOSCodeSign',
     author='oylbin',
@@ -13,6 +13,8 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: Apache Software License',
+        'Operating System :: MacOS',
+        'Operating System :: MacOS :: MacOS X',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
     ],
@@ -20,9 +22,8 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        'Click',
+        'click',
         'sh',
-        'biplist',
     ],
     entry_points={
         'console_scripts': [
