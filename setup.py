@@ -1,8 +1,22 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='iOSCodeSign',
-    version='1.0',
+    name='ioscodesign',
+    version='1.0.0',
+    description='codesign tool for iOS package',
+    url='https://github.com/oylbin/iOSCodeSign',
+    author='oylbin',
+    author_email='oylbin@gmail.com',
+    license='Apache License 2.0',
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'License :: OSI Approved :: Apache License 2.0',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.5',
+    ],
+    keywords='ios codesign codesigning',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -10,8 +24,9 @@ setup(
         'sh',
         'biplist',
     ],
-    entry_points='''
-        [console_scripts]
-        ioscodesign=ioscodesign.cmd:main
-    ''',
+    entry_points={
+        'console_scripts': [
+            'ioscodesign=ioscodesign.cmd:main',
+        ],
+    },
 )
